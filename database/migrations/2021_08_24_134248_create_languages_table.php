@@ -17,9 +17,9 @@ class CreateLanguagesTable extends Migration
             $table->integer('id')->primary();
             $table->string('name', 100);
             $table->string('code', 100);
-            $table->integer('rtl')->default(0);
+            $table->integer('rtl');
             $table->tinyInteger('enable');
-            $table->timestamps()->default('current_timestamp()');
+            $table->timestamp('failed_at')->useCurrent();
             $table->timestamp('deleted_at')->nullable();
         });
     }
