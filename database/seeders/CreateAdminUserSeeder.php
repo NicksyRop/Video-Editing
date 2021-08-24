@@ -37,7 +37,7 @@ class CreateAdminUserSeeder extends Seeder
             'duty'=> 'Admin',
             'email' => 'admin@ediyt.com',
             'password' => Hash::make('Jesusbaby1'),
-            'avatar'=> '/avatar/avatar-place.png'
+
 
         ]);
 
